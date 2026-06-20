@@ -95,9 +95,10 @@ Two operational Grafana dashboards provide per-patient, per-stay clinical visibi
 #### ChartEvents Dashboard
 Monitors high-frequency vital sign recordings for a specific ICU stay.
 
-![Chartevents Dashboard 1](Streaming Pipeline/Grafana Dashboards/Chartevents/Dashboard1.1.jpeg)
+<img src="Streaming Pipeline/Grafana Dashboards/Chartevents/Dashboard1.1.jpeg" alt="Chartevents Dashboard 1" width="800">
 
-![Chartevents Dashboard 2](Streaming Pipeline/Grafana Dashboards/Chartevents/Dashboard1.2.jpeg)
+<img src="Streaming Pipeline/Grafana Dashboards/Chartevents/Dashboard1.2.jpeg" alt="Chartevents Dashboard 2" width="800">
+
 
 - **Top Output Items** — ranked horizontal bar chart showing the most recorded chart items (Heart Rate: 19,276 events; Non-Invasive Blood Pressure systolic: 16,183; O2 saturation: 16,106)
 - **Total Events** — real-time KPI card (e.g., **5,560** events for the filtered stay)
@@ -112,9 +113,10 @@ Monitors high-frequency vital sign recordings for a specific ICU stay.
 #### OutputEvents Dashboard
 Monitors fluid and clinical output measurements.
 
-![Outputevents Dashboard 1](Streaming Pipeline/Grafana Dashboards/Outputevents/Dashboard2.1.jpeg)
+<img src="Streaming Pipeline/Grafana Dashboards/Outputevents/Dashboard2.1.jpeg" alt="Outputevents Dashboard 1" width="800">
 
-![Outputevents Dashboard 2](Streaming Pipeline/Grafana Dashboards/Outputevents/Dashboard2.2.jpeg)
+<img src="Streaming Pipeline/Grafana Dashboards/Outputevents/Dashboard2.2.jpeg" alt="Outputevents Dashboard 2" width="800">
+
 
 - **Top Output Items** — Urine Out Foley (10,902), Chest Tubes CTICU CT 2 (1,390), Chest Tubes CTICU CT 1 (760)
 - **Total Events** — **244** for the filtered stay
@@ -152,7 +154,7 @@ High-level demographic overview of the patient population.
 #### Diagnosis Distribution Page
 Clinical diagnosis analysis broken down by demographic cohorts.
 
-![Patient Page Dashboard](Batch Pipeline/Dashboard/Dash2.jpg)
+<img src="Batch Pipeline/Dashboard/Dash2.jpg" alt="Patient Page Dashboard" width="800">
 
 - **Top 10 Diagnoses by Marital Status** — stacked bar chart. Leading diagnoses: Pneumonia (1,500+), Sepsis (~1,100), Congestive Heart Failure, Coronary Artery Disease, Chest Pain
 - **Top 10 Diagnoses by Race** — stacked bar chart showing racial distribution within each diagnostic category; White patients dominate across all diagnoses reflecting population demographics
@@ -160,7 +162,7 @@ Clinical diagnosis analysis broken down by demographic cohorts.
 #### Admissions Page
 Operational admissions analytics.
 
-![Patient Page Dashboard](Batch Pipeline/Dashboard/Dash3.jpg)
+<img src="Batch Pipeline/Dashboard/Dash3.jpg" alt="Patient Page Dashboard" width="800">
 
 | Metric | Value |
 |---|---|
@@ -175,7 +177,7 @@ Operational admissions analytics.
 #### ICU Page
 ICU-specific operational performance metrics.
 
-![Patient Page Dashboard](Batch Pipeline/Dashboard/Dash4.jpg)
+<img src="Batch Pipeline/Dashboard/Dash4.jpg" alt="Patient Page Dashboard" width="800">
 
 
 - **Top 10 Charts Produced in ICUs** — horizontal bar chart by total patients (Heart Rate, Respiratory Rate, O2 Saturation, and Non-Invasive Blood Pressure variants dominate; range 0.1M–0.4M)
@@ -234,7 +236,7 @@ PulseBridge transitions healthcare data from highly normalized, siloed relationa
 
 The dimension tables implement **SCD Type 1 (Slowly Changing Dimensions)** to guarantee that patient demographics and clinical metadata remain updated without generating redundant historical rows, maintaining strict referential integrity across both batch and streaming layers.
 
-![Dimensional Modeling / Galaxy Schema](Batch Pipeline/Dimensional modeling.jpg)
+<img src="Batch Pipeline/Dimensional modeling.jpg" alt="Dimensional Modeling / Galaxy Schema" width="850">
 
 ### 👥 Shared Dimension Tables (SCD Type 1)
 - **`dim_patient`** *(mapped to FHIR Patient)*: Contains unique patient demographics including `subject_id` (Natural Key), `gender`, `dob`, `dod` (date of death), `age`, `age_group`, and `race`.
