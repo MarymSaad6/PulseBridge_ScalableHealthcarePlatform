@@ -135,7 +135,7 @@ Four interlinked Power BI report pages provide population-level strategic insigh
 #### Patient Page
 High-level demographic overview of the patient population.
 
-![Patient Page Dashboard](Batch Pipeline/Dashboard/Dash1.jpg)
+<img src="Batch Pipeline/Dashboard/Dash1.jpg" alt="Patient Page Dashboard" width="800">
 
 
 | Metric | Value |
