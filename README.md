@@ -40,7 +40,8 @@ The platform processes data for **~47K+ patients**, **59K+ admissions**, **212+ 
 ## 🏗️ Architecture
 
 
-![System Architecture](Pipeline.jpg)
+<img width="1365" height="531" alt="WhatsApp Image 2026-06-21 at 8 41 21 AM" src="https://github.com/user-attachments/assets/929b616c-9fb3-4c7a-8f0d-ad28ce00860e" />
+
 
 
 ### Primary Pipeline — Medallion Lakehouse (AWS Glue + Athena + Power BI)
@@ -236,7 +237,7 @@ PulseBridge transitions healthcare data from highly normalized, siloed relationa
 
 The dimension tables implement **SCD Type 1 (Slowly Changing Dimensions)** to guarantee that patient demographics and clinical metadata remain updated without generating redundant historical rows, maintaining strict referential integrity across both batch and streaming layers.
 
-<img src="Batch Pipeline/Dimensional modeling.jpg" alt="Dimensional Modeling / Galaxy Schema" width="850">
+<img width="1231" height="630" alt="WhatsApp Image 2026-06-21 at 7 51 11 AM" src="https://github.com/user-attachments/assets/57d5f69e-f720-490e-8046-871bae5620ec" />
 
 ### 👥 Shared Dimension Tables (SCD Type 1)
 - **`dim_patient`** *(mapped to FHIR Patient)*: Contains unique patient demographics including `subject_id` (Natural Key), `gender`, `dob`, `dod` (date of death), `age`, `age_group`, and `race`.
